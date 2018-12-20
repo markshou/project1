@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book Reviews - Main Page
+{% endblock %}
+
+{% block body %}
+    <p> 
+        <div class="d-flex justify-content-end">Logged in as: {{session["username"]}}<br></div>
+        <div class="d-flex justify-content-end"><a href = "{{url_for( "logout" )}}" ><button type="button" class="btn btn-secondary">Logout</button></a></div>
+    </p>
+    <br><br>
+
+    <div class="container">
+        <div class="card text-center" id="wrapper">
+            <div class="card-header">Search Book Database</div>
+            <div class="card-body">
+                <p class="text-danger">{{ message }}</p>
+                <form action="{{ url_for('search') }}" method="post">
+                    <input class="form-control" name="searchbox" type="text" placeholder="Enter the Title, Author, or ISBN (partial match ok)">
+                    <br>
+                    <button type="submit" class="btn btn-primary" style="width:100%;"> Search </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card text-center" style="margin: 50px auto 50px auto;">
+            <div class="alert alert-dark" role="alert">Search Results for: {{ query }}</div>
+            
+            <div class="card text-left">
+                <table class="table table-hover">
+                    <tr>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                    </tr>
+
+                    {% for result in results %}
+                    <tr>
+                        <td> {{ loop.index }} </td>
+                        <td> <a href = "{{ url_for("book", isbn=result.isbn) }}">{{ result.title }}</a></td>
+                        <td> {{ result.author }} </td>
+                        <td> {{ result.isbn }} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,9 @@
+Flask
+Flask-Session
+psycopg2
+SQLAlchemy
+os
+re
+requests
+flask_bcrypt
+bs4

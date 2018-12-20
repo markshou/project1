@@ -1,0 +1,629 @@
+
+
+true
+
+
+
+
+355917
+Flyte (Septimus Heap, #2)
+
+
+
+
+
+
+https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png
+2007
+3
+27
+HarperCollins Publishers
+en-US
+false
+But there is something sinister at work. Marcia is constantly trailed by a menacing Darke Shadow, and Septimus's brother Simon seems bent on a revenge no one understands. Why is the Darke Magyk still lingering?Bringing fantasy to new heights, Angie Sage continues the journey of Septimus Heap with her trademark humor and all of the clever details readers have come to love.]]>
+
+3245408
+73
+355917
+87237
+256063
+64078
+1587
+2006
+3
+14
+Flyte
+
+book
+5:23232|4:22376|3:14411|2:3107|1:952|total:64078
+-30
+
+
+
+4.00
+
+
+
+
+
+
+
+
+
+157663
+Angie Sage
+
+
+
+
+
+
+3.99
+342028
+12086
+
+
+619712
+Mark Zug
+Illustrations
+
+
+
+
+
+4.04
+190932
+5107
+
+
+
+      
+  #goodreads-widget {
+    font-family: georgia, serif;
+    padding: 18px 0;
+    width:565px;
+  }
+  #goodreads-widget h1 {
+    font-weight:normal;
+    font-size: 16px;
+    border-bottom: 1px solid #BBB596;
+    margin-bottom: 0;
+  }
+  #goodreads-widget a {
+    text-decoration: none;
+    color:#660;
+  }
+  iframe{
+    background-color: #fff;
+  }
+  #goodreads-widget a:hover { text-decoration: underline; }
+  #goodreads-widget a:active {
+    color:#660;
+  }
+  #gr_footer {
+    width: 100%;
+    border-top: 1px solid #BBB596;
+    text-align: right;
+  }
+  #goodreads-widget .gr_branding{
+    color: #382110;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+
+Flyte Reviews
+
+
+Reviews from Goodreads.com
+
+
+
+      ]]>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8
+Libraries
+https://www.goodreads.com/book_link/follow/8
+
+
+
+
+1
+Amazon
+https://www.goodreads.com/book_link/follow/1
+
+
+10
+Audible
+https://www.goodreads.com/book_link/follow/10
+
+
+3
+Barnes & Noble
+https://www.goodreads.com/book_link/follow/3
+
+
+1027
+Kobo
+https://www.goodreads.com/book_link/follow/1027
+
+
+2102
+Apple Books
+https://www.goodreads.com/book_link/follow/2102
+
+
+8036
+Google Play
+https://www.goodreads.com/book_link/follow/8036
+
+
+4
+Abebooks
+https://www.goodreads.com/book_link/follow/4
+
+
+882
+Book Depository
+https://www.goodreads.com/book_link/follow/882
+
+
+9
+Indigo
+https://www.goodreads.com/book_link/follow/9
+
+
+5
+Alibris
+https://www.goodreads.com/book_link/follow/5
+
+
+107
+Better World Books
+https://www.goodreads.com/book_link/follow/107
+
+
+7
+IndieBound
+https://www.goodreads.com/book_link/follow/7
+
+
+
+
+165775
+2
+
+44897
+
+
+
+
+
+
+16
+7
+true
+
+
+
+
+
+47881
+
+
+
+
+
+441
+
+847797
+
+0439545307
+9780439545303
+3.99
+20759
+2006
+6
+1
+
+
+6206
+Jenny Nimmo
+
+
+
+
+
+5801741
+Lost (Magic Thief, #2)
+Lost
+
+
+
+400
+
+5973719
+
+0061375896
+9780061375897
+4.09
+10266
+2009
+5
+12
+
+
+827236
+Sarah Prineas
+
+
+
+
+
+187315
+
+The Cobra King of Kathmandu
+
+
+
+
+
+2452022
+
+0439670233
+9780439670234
+3.87
+9607
+2007
+2
+1
+
+
+3155347
+P.B. Kerr
+
+
+
+
+
+6185409
+
+The Fiend and the Forge
+
+
+
+547
+
+24999275
+
+0375838988
+9780375838989
+4.10
+6816
+2010
+11
+23
+
+
+1100089
+Henry H. Neff
+
+
+
+
+
+312050
+
+Icefire
+
+
+
+421
+
+302969
+
+0439672465
+9780439672467
+3.91
+22625
+2007
+7
+
+
+
+179712
+Chris d'Lacey
+
+
+
+
+
+459900
+
+Into the Mist
+
+
+
+
+
+3028941
+
+0439899524
+9780439899529
+4.03
+4189
+
+
+
+
+
+46474
+Patrick Carman
+
+
+
+
+
+9531
+
+Peter and the Shadow Thieves
+
+
+
+557
+
+3204657
+
+078683787X
+9780786837878
+4.15
+32673
+2006
+7
+15
+
+
+6245
+Dave Barry
+
+
+
+
+
+2144899
+
+Ironhand
+
+
+
+448
+
+2118648
+
+0340911646
+9780340911648
+3.97
+2721
+2007
+10
+1
+
+
+415731
+Charlie Fletcher
+
+
+
+
+
+2073686
+
+Tales From the Hood
+
+
+
+274
+
+2078934
+
+081099478X
+9780810994782
+4.29
+17081
+2008
+5
+2
+
+
+65335
+Michael Buckley
+
+
+
+
+
+2208744
+
+Dragon Flight
+
+
+
+262
+
+2214520
+
+1599901102
+9781599901107
+4.18
+17584
+
+
+
+
+
+359109
+Jessica Day George
+
+
+
+
+
+1211904
+
+
+
+
+
+406
+
+1200294
+
+1590388003
+9781590388006
+3.97
+11870
+2007
+9
+25
+
+
+125984
+Obert Skye
+
+
+
+
+
+1222817
+
+
+
+
+
+400
+
+940450
+
+0375937412
+9780375937415
+4.21
+3323
+2007
+2
+13
+
+
+24830
+Paul Stewart
+
+
+
+
+
+

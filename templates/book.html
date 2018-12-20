@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book Reviews
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <p> 
+        <div class="d-flex justify-content-end">Logged in as: {{session["username"]}}<br></div>
+        <div class="d-flex justify-content-end"><a href = "{{url_for( "logout" )}}" ><button type="button" class="btn btn-secondary">Logout</button></a></div>
+        </p>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="rounded left" style="width: 100%;" src="http://covers.openlibrary.org/b/ISBN/{{ book_info[1] }}-L.jpg" alt="Book Cover">
+                    <h1 class="lucida">ISBN# {{ book_info[1] }}</h1>
+                </div>
+                <div class="col-sm-8">
+                    <h1 class="display-4">{{ book_info[2] }}</h1>
+                    <span class="lucida">{{ book_info[4] }}</span><br>
+                    <p class="lead">by: {{ book_info[3] }}</p>
+                    
+                    <!-- Percentage based star ratings -->
+
+                    <div class="ratings">
+                        <div class="score"><span style="width: {{gr_rating_pct}}"></span></div>
+                        <br>
+                        <span>Goodreads: {{ rating }} &nbsp • &nbsp </span>
+                        <span> {{ rcount }} ratings </span>
+                    </div>
+
+                    <hr class="my-1">
+                    <p>{{ blurb }}</p>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+                <form action="{{ url_for('book', isbn=book_info[1]) }}" method="post">
+                    <span>Rate this book</span><br>
+                    <!-- Pure CSS Star Rating Widget -->
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5.0" required /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4.5" required /><label class="half" for="star4half" title="Very good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4.0" required /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3.5" required /><label class="half" for="star3half" title="Ok - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3.0" required /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2.5" required /><label class="half" for="star2half" title="Not that good - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2.0" required /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1.5" required /><label class="half" for="star1half" title="Bad - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1.0" required /><label class = "full" for="star1" title="Terrible - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="0.5" required /><label class="half" for="starhalf" title="Waste of time - 0.5 stars"></label>
+                    </fieldset>
+
+                    <textarea class="form-control" name="comment" rows="3" placeholder="Comment here ..." required></textarea>
+                    <p class="text-danger">{{ comment_error }}</p>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+
+                <hr class="my-4">
+                
+                <h1 class="display-5">Book Reviews</h1>
+                
+                {% for review in reviews %}
+                    <br>
+                    <span class=review>{{ review.acc_id }}</span>
+                    <span>rated it</span>
+                        <div class="score-small"><span style="width: {{ '{0:.0%}'.format(review.rating / 5) }}"></span></div>
+                    <span>on </span>
+                    <span class=review>{{ review.date2 }}</span>
+                    <br>
+                    <span class=comments> {{ review.comment }}</span>
+                    <br><br>
+                {% endfor %}
+
+<!--                 <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> User </th>
+                            <th> Comment </th>
+                            <th> Rating </th>
+                            <th> Date </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for review in reviews %}
+                        <tr>
+                            <td> {{ review.acc_id }} </td>
+                            <td> {{ review.comment }} </td>
+                            <td> {{ review.rating }} </td>
+                            <td> {{ review.date }} </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table> -->
+
+            
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+        <div class="card" style="width: 10rem;">
+            <img class="card-img-top" src="http://covers.openlibrary.org/b/ISBN/{{ book_info[1] }}-L.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h6 class="card-title"> ISBN: {{ book_info[1] }} </h6>
+                <h6 class="card-title"> Goodreads: {{ rating }} / 5</h6>
+            </div>
+        </div>
+
+
+
+
+
+
+    <div class="container" style="margin: 50px auto 50px auto;">
+        <div class="row">
+            <div class="col-auto">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://covers.openlibrary.org/b/ISBN/{{ book_info[1] }}-M.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"> Title </h6>
+                        <p class="card-text">{{ book_info[2] }}</p>
+                        <h6 class="card-title"> Author</h6>
+                        <p class="card-text">{{ book_info[3] }}</p>
+                        <h6 class="card-title"> Year </h6>
+                        <p class="card-text">{{ book_info[4] }}</p>
+                        <h6 class="card-title"> ISBN </h6>
+                        <p class="card-text">{{ book_info[1] }}</p>
+                        <h6 class="card-title"> Goodread Rating </h6>
+                        <p class="card-text">{{ rating }} / 5</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

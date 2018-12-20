@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Error {{ err_type }}:</h1>
+        <p class="lead">{{ message }}</p>
+        <br><br>
+        <a href="/">Return to Home Page</a>
+    </div>
+    </div>
+
+{% endblock %}
+

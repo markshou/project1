@@ -1,0 +1,163 @@
+h3 { 
+    font-family: Consolas, monaco, monospace; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; 
+}
+
+#wrapper {
+    margin: 0% auto 0% auto;
+    width: 75%;
+}
+
+#wrapper2 {
+    margin: 50px auto 50px auto;
+}
+
+.lucida {
+    font-family: Lucida Console, Monaco, monospace; color: rgba(72, 73, 77, 0.856); font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px;
+}
+.lucida-small {
+    font-family: Lucida Console, Monaco, monospace; color: rgba(72, 73, 77, 0.856); font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px;
+}
+
+.col-sm-3 {
+    max-width: 100%;
+}
+
+.display-4 {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 45px;
+}
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.ratings-small {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.review {
+    color: #00635D;
+}
+
+.comments {
+    font-family: "Open Sans", Tahoma, sans-serif;
+    color: rgb(58, 60, 61);
+    text-indent: 50px;
+}
+
+/****** Pure CSS Star Rating Widget *****/
+
+fieldset, label { margin: 0; padding: 0; }
+/* body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; } */
+
+/* Style Star Rating Widget */
+.rating { 
+  border: none;
+  float: left;
+}
+
+/* This turns visibility of native radio buttons to 0, but 
+still allow error message to show up if no option is selected. 
+{ display: none; } in contrast will not trigger error msgs.*/
+.rating > input { 
+    opacity: 0; 
+    position: absolute;
+	z-index: -1;
+} 
+
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+  float: right;
+}
+
+/* CSS Magic to Highlight Stars on Hover */
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/****** Percentage based star ratings *****/
+
+.score {
+    display: inline-block;
+    font-family: Wingdings;
+    font-size: 30px;
+    color: #ccc;
+    position: relative;
+}
+.score::before, .score span::before {
+    content: "\2605\2605\2605\2605\2605";
+    display: block;
+}
+.score span {
+    color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.score:before {
+    -webkit-text-stroke: 1px #848484;
+}
+.score span:before {
+    -webkit-text-stroke: 1px orange;
+}
+
+.score-small {
+    display: inline-block;
+    font-family: Wingdings;
+    font-size: 1em;
+    color: #ccc;
+    position: relative;
+}
+.score-small::before, .score-small span::before {
+    content: "\2605\2605\2605\2605\2605";
+    display: block;
+}
+.score-small span {
+    color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.score-small:before {
+    -webkit-text-stroke: 1px #848484;
+}
+.score-small span:before {
+    -webkit-text-stroke: 1px orange;
+}
+
+
