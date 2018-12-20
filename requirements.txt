@@ -2,7 +2,6 @@ Flask
 Flask-Session
 psycopg2
 SQLAlchemy
-re
 requests
 flask_bcrypt
 bs4
